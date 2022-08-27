@@ -8,10 +8,10 @@
 </p>
 
 ## Project Installation
-`` Run git clone https://github.com/joemmires/repo
-`` Run touch database/database.sqlite to create a  simple sqlite database for the test
-`` Run cp .env.example .env to create your .env
-`` Edit your .env and set database driver ro sqlite or your prefered database connection
-`` Configure your Flutterwave keys
-`` Run composer update to install laravel dependencies
-`` Run php artisan serve and copy your address to your testinng environment
+- Run ``git clone https://github.com/joemmires/iRecharge-Assessment.git``
+- Run ``touch database/database.sqlite`` to create a  simple sqlite database for the test
+- Run ``cp .env.example .env`` to create your .env
+- Edit your .env and set database driver ro sqlite or your prefered database connection
+- Configure your Flutterwave keys
+- Run ``composer update`` to install laravel dependencies
+- Run ``php artisan serve`` and copy your address to your testinng environment
