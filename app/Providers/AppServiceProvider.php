@@ -23,6 +23,15 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        \Illuminate\Support\Collection::macro('recursive', function () {
+            return collect($this)->map(function ($value, $index) {
+                if (is_array($value) || $value instanceof \stdClass) {
+                    return collect($value)->recursive();
+                }
+                return $value;
+            });
+        });
+
+        bind_payment_method();
     }
 }
